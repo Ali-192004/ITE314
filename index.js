@@ -9,7 +9,7 @@ const myData = {
 };
 
 app.get('/', (req, res) => {
-    res.send("Welcome to my server, visitor! To know more  please try adding any of these in the url: ('/firstname', '/lastname', '/age', '/schoolemail'");
+    res.send("Welcome to my server, visitor! To know more  please try adding any of these in the url: ('/firstname', '/lastname', '/age', '/schoolemail')");
 });
 
 app.get('/firstname', (req, res) => {
