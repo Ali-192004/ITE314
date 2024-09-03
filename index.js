@@ -8,6 +8,10 @@ const myData = {
     school_email: 'alra.amantillo.swu@phinmaed.com',
 };
 
+app.get('/', (req, res) => {
+    res.send("Welcome to my server, visitor! To know more  please try adding any of these in the url: ('/firstname', '/lastname', '/age', '/schoolemail'");
+});
+
 app.get('/firstname', (req, res) => {
     res.send(myData.first_name.toUpperCase());
 });
@@ -26,6 +30,7 @@ app.get('/schoolemail', (req, res) => {
 
 app.get('/mydata', (req, res) => {
     res.send(myData)
+    
 });
 
 const PORT = process.env.PORT || 3000;
